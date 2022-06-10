@@ -4,36 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Login Page</title>
 </head>
 <body>
     <main>
         <div class="main-login">
-            <div class="main-left">
-                <h1>Faça login para ter uma nova experiência...</h1>
-                <img src="./assets/taken.svg" alt="Abuzido">
-            </div>
-            <div class="main-right">
-                <div class="card-login">
-                    <form action="">
-                        <h1>Login</h1>
-                        <div class="text-field">
-                            <label for="user">Usuário</label>
-                            <input type="text" name="user" placeholder="Digite um usuário...">
-                        </div>
-                        <div class="text-field">
-                            <label for="password">Senha</label>
-                            <input type="password" name="password" placeholder="Digite sua senha...">
-                        </div>
-                        <button class="btn-login">Login</button>
-                    </form>
+                <div class="main-left">
+                    <h1>Faça login <br>para ter uma nova <strong>experiência...</strong></h1>
+                    <img src="./assets/astronaut.svg" alt="Abuzido">
                 </div>
-            </div>
+                <div class="main-right">
+                    <div class="card-login">
+                        <form action="">
+                            <h1>Bem vindo<strong>!</strong></h1>
+                            <label for="user">
+                                <span>Usuário</span>
+                                <input type="text" name="user" placeholder="Digite seu usuário">
+                            </label>
+                            <label for="password">
+                                <span>Senha</span>
+                                <input type="password" name="password" placeholder="Digite sua senha">
+                            </label>
+                            <button class="btn-login" type="submit">Login</button>
+                            <div class="separator"></div>
+                            <span>Não tem uma conta?<br><a>Registre-se</a></span>
+                        </form>
+                    </div>
+                </div>
         </div>
     </main>
 
     <footer>
-        <p>Made by <strong>GaPolveiro02</strong></p>
+        <p>Made by <a href="https://github.com/GaPolveiro02">GaPolveiro02</a></p>
     </footer>
 </body>
 </html>
