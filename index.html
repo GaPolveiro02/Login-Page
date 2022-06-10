@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,17 +18,15 @@
                     <div class="card-login">
                         <form action="">
                             <h1>Bem vindo<strong>!</strong></h1>
-                            <label for="user">
-                                <span>Usuário</span>
-                                <input type="text" name="user" placeholder="Digite seu usuário">
-                            </label>
-                            <label for="password">
-                                <span>Senha</span>
-                                <input type="password" name="password" placeholder="Digite sua senha">
-                            </label>
+                            <div class="fields">
+                                <input type="text" name="user" placeholder="Digite seu usuário" aria-label="usuario">
+                            </div> 
+                            <div class="fields">
+                                <input type="password" name="password" placeholder="Digite sua senha" aria-errormessage="Ola">
+                            </div>
                             <button class="btn-login" type="submit">Login</button>
                             <div class="separator"></div>
-                            <span>Não tem uma conta?<br><a>Registre-se</a></span>
+                            <span>Não tem uma conta ?<br><a>Registre-se</a></span>
                         </form>
                     </div>
                 </div>
@@ -36,7 +34,7 @@
     </main>
 
     <footer>
-        <p>Made by <a href="https://github.com/GaPolveiro02">GaPolveiro02</a></p>
+        <p>Feito por <a href="https://github.com/GaPolveiro02">GaPolveiro02</a></p>
     </footer>
 </body>
 </html>

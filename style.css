@@ -5,6 +5,7 @@
     outline: none;
     border: none;
     font-size: 62.5%;
+    box-sizing: border-box;
 }
 
 body {
@@ -67,22 +68,18 @@ h1 > strong{
 }
 
 .card-login form h1 {
-    font-size: 5rem;
+    font-size: 6rem;
+    margin-bottom: 2rem;
 }
 
 .card-login form h1 > strong {
     font-size: 6rem;
 }
 
-.card-login form label {
+.card-login form .fields {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-}
-
-.card-login form label span {
-    font-size: 1.8rem;
-    margin-bottom: .5rem;
 }
 
 .card-login form input {
@@ -91,15 +88,12 @@ h1 > strong{
 
     font-size: 2rem;
 
-    border-radius: .2rem;
+    border-radius: 0 .5rem .5rem 0;
+    padding-left: 1rem;
     margin-bottom: 2rem;
 
     color: #f1f1f1f1;
     background-color: #455a64;
-}
-
-.card-login form input::placeholder {
-    padding-left: 1rem;
 }
 
 .card-login form input:focus {
@@ -137,6 +131,7 @@ h1 > strong{
 .card-login span > a {
     font-size: 1.5rem;
     color: #02fe8e;
+    cursor: pointer;
 }
 
 footer {
@@ -157,3 +152,117 @@ footer p > a {
     font-size: 2rem;
     margin-top: 2rem;
 }
+
+@media screen and (max-width: 800px) {
+    body {
+        overflow-y: hidden;
+    }
+
+    main {
+        height: 90vh;
+        width: 50vw;
+    }
+
+    .main-login {
+        height: 100vh;
+        width: 100vw;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    
+        text-align: center;
+        font-size: 10rem;
+    }
+
+    .main-login .main-left {
+        height: 38vh;
+        width: 100vw;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+        margin-left: 20rem;
+        margin-bottom: .8rem;
+        border-bottom: .1rem solid #02fe8e;
+    }
+
+    .main-login .main-left h1 {
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-login .main-left h1 strong {
+        font-size: 2.5rem;
+    }
+
+    .main-login .main-left img {
+        height: 25vh;
+    }
+
+    .card-login {
+        height: 50vh;
+        width: 100vw;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        font-size: 5rem;
+        border-radius: .5rem;
+    
+        margin-bottom: 4rem;
+        color: #f1f1f1f1;
+        background-color: #263238;
+        border: none;
+    }
+
+    .card-login form h1 {
+        font-size: 4rem;
+    }
+
+    .card-login form h1 strong {
+        font-size: 5rem;
+    }
+
+    .card-login form input {
+        height: 8vh;
+        width: 70vw;
+    }
+
+    .card-login form .btn-login {
+        width: 50vw;
+    }
+
+    .separator {
+        width: 80vw;
+        border: .1rem solid #02fe8e;
+        margin-top: 2rem;
+    }
+
+    .card-login span {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .card-login span a {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        height: 10vh;
+        width: 100vw;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    
+        font-size: 2rem;
+    }
+  } 
